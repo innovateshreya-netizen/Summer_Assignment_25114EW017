@@ -13,7 +13,7 @@ int main() {
         arr[i] = arr[i - 1];
     }
 
-    // Place first element at end
+    // Place last element at first
     arr[0] = temp;
 
     printf("Array after right rotation:\n");

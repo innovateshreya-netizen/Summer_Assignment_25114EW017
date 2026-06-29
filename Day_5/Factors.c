@@ -5,7 +5,7 @@
 int main(){
     
 int n ;
-printf("Enter a Number: ",n);
+printf("Enter a Number: ");
 scanf("%d",&n);
 
 printf("Factors of  %d are ",n);

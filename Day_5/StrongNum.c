@@ -6,7 +6,7 @@
 int main(){
     
 int n, sum = 0;
-printf("Enter a Number: ",n);
+printf("Enter a Number: ");
 scanf("%d",&n);
 
 

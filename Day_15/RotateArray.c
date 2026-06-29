@@ -3,30 +3,23 @@
 #include <stdio.h>
 
 int main() {
-    int n, i;
+    int arr[] = {10, 20, 30, 40, 50};
+    int n = 5;
 
-    printf("Enter the size: ");
-    scanf("%d",&n);
+    int temp = arr[0];
 
-    int arr[n];
-
-    // Input array elements
-    printf("Enter elements:\n");
-    for(i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+    // Shift elements left
+    for(int i = 0; i < n - 1; i++) {
+        arr[i] = arr[i + 1];
     }
 
-    // Display array elements
-    printf("Array elements are:\n");
-    for(i = 0; i < n; i++) {
+    // Place first element at end
+    arr[n - 1] = temp;
+
+    printf("Array after left rotation:\n");
+
+    for(int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
-    }
-
-    //rotate array elements
-    printf("\nRotated Array elements are: ");
-    for( i=0 ; i < n ; i++){
-        i -= 1;
-        printf("%d ",arr[i]);
     }
 
     return 0;

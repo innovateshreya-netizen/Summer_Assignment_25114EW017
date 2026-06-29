@@ -15,7 +15,6 @@ int main() {
     for (int i = 1; i <= n; i++) {
         result = result * x;
     }
-
     printf("%d^%d = %lld", x, n, result);
 
     return 0;

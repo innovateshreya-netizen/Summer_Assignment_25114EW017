@@ -31,7 +31,7 @@ int main()
 {
     int n;
 
-    printf("Enter a numbers: ");
+    printf("Enter a number: ");
     scanf("%d",&n);
 
     Prime(n);
